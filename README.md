@@ -8,7 +8,7 @@
 
 Feel free to contribute to this repo by creating or editing programs in any programming language. Also you can make different folders for the code you want to contribute.
 
-Getting Started 😁:
+## Getting Started 😁:
 1. Fork this repository
 2. Clone the repository on your local machine
 3. Create a new branch
