@@ -1,8 +1,10 @@
 # Welcome to Hacktoberfest 2022 🎉
 
- Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the challenge and earn a limited edition T-shirt.
+## Hacktoberfest 2022 has come to an end.
 
 <img width="1181" alt="logo" src="https://user-images.githubusercontent.com/91958667/194501785-3c44b7e3-26cc-4f17-a819-93bd972e54b6.png">
+
+ Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the challenge and earn a limited edition T-shirt.
 
 [![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v1/open-source.svg)](https://github.com/Sachindrck/hactoberfest_contribution_2022)
 
