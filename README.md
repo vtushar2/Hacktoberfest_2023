@@ -1,6 +1,4 @@
-# Welcome to Hacktoberfest 2022 🎉
-
-## Hacktoberfest 2022 has come to an end.
+# Welcome to Hacktoberfest 2023 🎉
 
 <img width="1181" alt="logo" src="https://user-images.githubusercontent.com/91958667/194501785-3c44b7e3-26cc-4f17-a819-93bd972e54b6.png">
 
