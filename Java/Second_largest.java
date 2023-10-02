@@ -5,8 +5,7 @@ class Secondlargest{
 
 // Function to print the
 // second largest elements
-static void print2largest(int arr[],
-						int arr_size)
+static void print2largest(int arr[],int arr_size)
 {
 int i, first, second;
 
