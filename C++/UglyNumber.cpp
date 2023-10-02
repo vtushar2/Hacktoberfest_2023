@@ -1,54 +1,46 @@
 // C++ program to find nth ugly number
+//so Ugly numbers are positive integers that have only prime factors 2, 3, or 5. Here's a C++ program to find the nth ugly number:
+//Here is c++ code
+
 #include <iostream>
+#include <vector>
 using namespace std;
 
-// This function divides a by greatest
-// divisible power of b
-int maxDivide(int a, int b)
-{
-	while (a % b == 0)
-		a = a / b;
-		
-	return a;
+int getNthUglyNumber(int n) {
+    vector<int> uglyNumbers(n);
+    uglyNumbers[0] = 1; // The first ugly number is 1
+
+    int i2 = 0, i3 = 0, i5 = 0;
+    int nextMultipleOf2 = 2, nextMultipleOf3 = 3, nextMultipleOf5 = 5;
+
+    for (int i = 1; i < n; i++) {
+        int nextUgly = min(nextMultipleOf2, min(nextMultipleOf3, nextMultipleOf5));
+        uglyNumbers[i] = nextUgly;
+
+        if (nextUgly == nextMultipleOf2) {
+            i2++;
+            nextMultipleOf2 = uglyNumbers[i2] * 2;
+        }
+        if (nextUgly == nextMultipleOf3) {
+            i3++;
+            nextMultipleOf3 = uglyNumbers[i3] * 3;
+        }
+        if (nextUgly == nextMultipleOf5) {
+            i5++;
+            nextMultipleOf5 = uglyNumbers[i5] * 5;
+        }
+    }
+
+    return uglyNumbers[n - 1];
 }
 
-// Function to check if a number is ugly or not
-int isUgly(int no)
-{
-	no = maxDivide(no, 2);
-	no = maxDivide(no, 3);
-	no = maxDivide(no, 5);
+int main() {
+    int n;
+    cout << "Enter n: ";
+    cin >> n;
 
-	return (no == 1) ? 1 : 0;
+    int ugly = getNthUglyNumber(n);
+    cout << "The " << n << "th ugly number is: " << ugly << endl;
+
+    return 0;
 }
-
-// Function to get the nth ugly number
-int getNthUglyNo(int n)
-{
-	int i = 1;
-	
-	// Ugly number count
-	int count = 1;
-
-	// Check for all integers until ugly
-	// count becomes n
-	while (n > count)
-	{
-		i++;
-		if (isUgly(i))
-			count++;
-	}
-	return i;
-}
-
-// Driver Code
-int main()
-{
-	
-	// Function call
-	unsigned no = getNthUglyNo(150);
-	cout << "150th ugly no. is " << no;
-	return 0;
-}
-
-
