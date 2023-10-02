@@ -5,4 +5,4 @@ from bisect import bisect_left, bisect_right
 bisect_left(arr,val)
 
 # Returns rightmost insertion point of x in a sorted list
-bisect_right(arr,val)
+bisect_right(arr,val) 
