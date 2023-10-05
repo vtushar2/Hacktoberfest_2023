@@ -1,3 +1,4 @@
+//Driver Code : this function calls itself recursively until the value of n becomes 1
 def recur_factorial(n):
    if n == 1:
        return n
